@@ -21,7 +21,7 @@ export default function Dashboard() {
       <div className="grid gap-4 md:grid-cols-3">
         <Card title="Total Items" value={summary.total_items} />
         <Card title="Low Items" value={summary.low_items} color="red" />
-        <Card title="Total Stock" value={summary.total_stock} color="green" />
+        <Card title="In Stock" value={summary.total_stock} color="green" />
       </div>
 
       <div className="bg-white p-4 rounded-xl shadow h-80">
