@@ -99,8 +99,8 @@ export default function Foods() {
           <thead>
             <tr className="bg-slate-100">
               <th className="p-2 text-left">Name</th>
-              <th className="p-2 text-left">CP</th>
-              <th className="p-2 text-left">SP</th>
+              <th className="p-2 text-left">Cost</th>
+              <th className="p-2 text-left">Selling Pricd</th>
               <th className="p-2 text-left">Profit</th>
               <th className="p-2 text-left">Margin %</th>
               <th className="p-2 text-left">Actions</th>
