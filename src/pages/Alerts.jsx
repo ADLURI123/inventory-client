@@ -30,7 +30,7 @@ export default function Alerts() {
               <div>
                 <div className="font-semibold text-red-700">{g.name}</div>
                 <div className="text-sm text-red-600">
-                  Stock: {g.stock} | Threshold: {g.threshold}
+                  Stock: {g.stock} | Threshold: {g.threshold} | Unit Cost: ${g.unit_cost}
                 </div>
               </div>
               <div className="bg-red-200 text-red-700 px-3 py-1 rounded text-xs font-semibold">

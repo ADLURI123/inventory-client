@@ -32,6 +32,7 @@ export default function Stocks() {
             <tr className="bg-slate-100">
               <th className="p-2 text-left">Name</th>
               <th className="p-2 text-left">Stock</th>
+              <th className="p-2 text-left">Cost</th>
               <th className="p-2 text-left">Threshold</th>
               <th className="p-2 text-left">Status</th>
               <th className="p-2 text-left">Actions</th>
@@ -42,6 +43,7 @@ export default function Stocks() {
               <tr key={g.id} className="border-b">
                 <td className="p-2">{g.name}</td>
                 <td className="p-2">{g.stock}</td>
+                <td className="p-2">${g.unit_cost}</td>
                 <td className="p-2">{g.threshold}</td>
                 <td className="p-2">
                   {g.stock < g.threshold ? (
