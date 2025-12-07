@@ -79,9 +79,9 @@ export default function DefineGrocery() {
           <thead>
             <tr className="bg-slate-100">
               <th className="p-2 text-left">Name</th>
-              <th className="p-2 text-left">Threshold</th>
-              <th className="p-2 text-left">Stock</th>
               <th className="p-2 text-left">Unit Cost</th>
+              <th className="p-2 text-left">Stock</th>
+              <th className="p-2 text-left">Threshold</th>
               <th className="p-2 text-left">Actions</th>
             </tr>
           </thead>
@@ -89,9 +89,9 @@ export default function DefineGrocery() {
             {groceries.map((g) => (
               <tr key={g.id} className="border-b">
                 <td className="p-2">{g.name}</td>
-                <td className="p-2">{g.threshold}</td>
-                <td className="p-2">{g.stock}</td>
                 <td className="p-2">₹ {g.unit_cost?.toFixed?.(2) ?? g.unit_cost}</td>
+                <td className="p-2">{g.stock}</td>
+                <td className="p-2">{g.threshold}</td>
                 <td className="p-2 space-x-3">
                   <button onClick={() => openEdit(g)} className="px-3 py-1 bg-amber-500 text-white rounded">
                     Edit
