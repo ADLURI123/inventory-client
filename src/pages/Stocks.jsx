@@ -87,9 +87,8 @@ export default function Stock() {
 
       {/* Center Window Panel */}
       {selected && (
-        <div className="absolute inset-0 flex items-start justify-center mt-12 z-10">
-          <div className="bg-white border border-slate-300 rounded-xl p-6 w-[420px] shadow-xl space-y-5">
-
+        <div className="fixed top-0 left-0 w-full h-full flex items-start justify-center mt-12 z-10 pointer-events-none">
+          <div className="bg-white border border-slate-300 rounded-xl p-6 w-[420px] shadow-xl space-y-5 pointer-events-auto">
             <h3 className="text-lg font-semibold text-center">
               Manage Stock — {selected.name}
             </h3>
