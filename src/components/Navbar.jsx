@@ -21,6 +21,9 @@ export default function Navbar() {
         <NavLink to="/alerts" className={({ isActive }) => cls(isActive)}>
           Alerts
         </NavLink>
+        <NavLink to="/foods" className={({ isActive }) => cls(isActive)}>
+          Foods
+        </NavLink>
       </div>
     </nav>
   );
