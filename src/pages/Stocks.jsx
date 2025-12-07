@@ -43,7 +43,7 @@ export default function Stocks() {
               <tr key={g.id} className="border-b">
                 <td className="p-2">{g.name}</td>
                 <td className="p-2">{g.stock}</td>
-                <td className="p-2">${g.unit_cost}</td>
+                <td className="p-2">₹ {g.unit_cost}</td>
                 <td className="p-2">{g.threshold}</td>
                 <td className="p-2">
                   {g.stock < g.threshold ? (
