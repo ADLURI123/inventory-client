@@ -117,13 +117,13 @@ export default function Foods() {
                 <td className="p-2 space-x-2">
                   <button
                     onClick={() => openEdit(f)}
-                    className="px-3 py-1 text-white rounded"
+                    className="px-3 py-1 bg-slate-900 text-white rounded"
                   >
                     Edit
                   </button>
                   <button
                     onClick={() => del(f.id)}
-                    className="px-3 py-1 text-white rounded"
+                    className="px-3 py-1 bg-slate-900 text-white rounded"
                   >
                     Delete
                   </button>

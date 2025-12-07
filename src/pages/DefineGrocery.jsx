@@ -93,10 +93,10 @@ export default function DefineGrocery() {
                 <td className="p-2">{g.stock}</td>
                 <td className="p-2">{g.threshold}</td>
                 <td className="p-2 space-x-3">
-                  <button onClick={() => openEdit(g)} className="px-3 py-1 text-white rounded">
+                  <button onClick={() => openEdit(g)} className="px-3 py-1 bg-slate-900 text-white rounded">
                     Edit
                   </button>
-                  <button onClick={() => del(g)} className="px-3 py-1 text-white rounded">
+                  <button onClick={() => del(g)} className="px-3 py-1 bg-slate-900 text-white rounded">
                     Delete
                   </button>
                 </td>
