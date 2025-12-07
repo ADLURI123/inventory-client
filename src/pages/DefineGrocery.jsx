@@ -121,12 +121,14 @@ export default function DefineGrocery() {
             </h3>
 
             <div className="space-y-2">
+              <label className="text-xs text-slate-600">Name</label>
               <input
                 className="border p-2 rounded w-full"
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
+              <label className="text-xs text-slate-600">Threshold</label>
               <input
                 type="number"
                 className="border p-2 rounded w-full"
@@ -134,6 +136,7 @@ export default function DefineGrocery() {
                 value={threshold}
                 onChange={(e) => setThreshold(e.target.value)}
               />
+              <label className="text-xs text-slate-600">Unit Cost</label>
               <input
                 type="number"
                 className="border p-2 rounded w-full"
