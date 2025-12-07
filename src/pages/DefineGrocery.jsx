@@ -93,16 +93,11 @@ export default function DefineGrocery() {
                 <td className="p-2">{g.stock}</td>
                 <td className="p-2">{g.threshold}</td>
                 <td className="p-2 space-x-3">
-                  <button onClick={() => openEdit(g)} className="text-amber-600 hover:text-amber-800">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M16.862 4.487 19.51 7.136a2.1 2.1 0 0 1 .003 2.966L8.51 21.106 3 22l.888-5.51L16.862 4.487Zm0 0L14 1.625" />
-                    </svg>
+                  <button onClick={() => openEdit(g)} className="px-3 py-1 text-white rounded">
+                    Edit
                   </button>
-
-                  <button onClick={() => del(g)} className="text-red-600 hover:text-red-800 ml-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4 6h16m-9 3v8m4-8v8M9 6l1-2h4l1 2m-9 0v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V6" />
-                    </svg>
+                  <button onClick={() => del(g)} className="px-3 py-1 text-white rounded">
+                    Delete
                   </button>
                 </td>
               </tr>
