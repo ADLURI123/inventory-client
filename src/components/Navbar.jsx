@@ -24,6 +24,10 @@ export default function Navbar() {
         <NavLink to="/foods" className={({ isActive }) => cls(isActive)}>
           Foods
         </NavLink>
+        <NavLink to="/footfall" className={({ isActive }) => cls(isActive)}>
+          Footfall
+        </NavLink>
+        
       </div>
     </nav>
   );
